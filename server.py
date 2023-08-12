@@ -29,7 +29,7 @@ def startSession(player_x, player_o, start):
 @app.route("/")
 # @cross_origin()
 def helloWorld():
-   return "Hello, cross-origin-world!"
+   return redirect("https://github.com/alkindi17/tictactoe-api")
 
 
 @app.route('/session', methods=['GET', 'POST'])
