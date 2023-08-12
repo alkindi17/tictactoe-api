@@ -1,6 +1,6 @@
 import uuid
 from flask_cors import CORS, cross_origin
-from flask import Flask, request, redirect
+from flask import Flask, request
 import tictattoe as t
 import players as p
 
@@ -29,7 +29,7 @@ def startSession(player_x, player_o, start):
 @app.route("/")
 # @cross_origin()
 def helloWorld():
-   return redirect("https://github.com/alkindi17/tictactoe-api")
+   return ('<h1>Hello</h1><a href="https://github.com/alkindi17/tictactoe-api">https://github.com/alkindi17/tictactoe-api</a>')
 
 
 @app.route('/session', methods=['GET', 'POST'])
