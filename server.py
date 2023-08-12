@@ -1,6 +1,6 @@
 import uuid
 from flask_cors import CORS, cross_origin
-from flask import Flask, request
+from flask import Flask, request, redirect
 import tictattoe as t
 import players as p
 
